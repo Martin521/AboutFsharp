@@ -1,6 +1,6 @@
 # Contributing to the F# compiler using VS Code, Ionide and Dev Containers
 
-The FSharp repository has great support for VS Code with Ionide and Dev Containers. It still took me a while though to understand how it fits all together and to get my infrastructure up and running. 
+The FSharp repository has great support for VS Code with Ionide and Dev Containers. It still took me a while though, as a newcomer, to understand how it fits all together and to get my infrastructure up and running. 
 
 One reason was that, currently, `fsharp/DEVGUIDE.md` is not really up to date and can be misleading. My main advice in our context: when using Dev Containers, forget about `build.sh`.
 
@@ -12,7 +12,7 @@ So this is a summary that may help others in the future.
 
 ## About the Dev Containers extension of VS Code
 
-This extension does amazing magic. It reads the devcontainer configuration from the remote repository, creates the container, installs all the prerequisites needed for the specific repository, sets up a remote VS Code server in the container, installs the necessary extension there, sets up a gpg agent that supports code signing in the container with your keys, and a lot more.
+This extension does amazing magic. It reads the devcontainer configuration from the remote repository, creates the container, installs all the prerequisites needed for the specific repository, sets up a remote VS Code server in the container, installs the necessary extensions there, sets up a gpg agent that supports code signing in the container with your keys, and a lot more.
 
 ## Local setup
 
