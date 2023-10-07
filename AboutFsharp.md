@@ -1,6 +1,6 @@
 # Contributing to the F# compiler using VS Code Dev Containers
 
-The FSharp repository has great support for VS Code and Dev Containers, for development, testing and debugging. As a newcomer, it still took me a while to get my infrastructure up and running and to find and fix a few minor items. So this as a summary that may help others in the future.
+The FSharp repository has great support for VS Code and Dev Containers, for development, testing and debugging. As a newcomer, it still took me a while to get my infrastructure up and running and to find and fix a few minor items. So this is a summary that may help others in the future.
 
 Here also is what I miss in many posts: This was written on October 7, 2023 and will probably soon be outdated again.
 
@@ -17,10 +17,10 @@ I have a Windows 11 laptop. VS Code is installed with Ionide and Dev Containers 
 * Run (i.e. Ctrl Shift P) `Dev Containers: Clone Repository in Named Container volume ...`
     * Enter the location of the fork that you just created (will be offered as first choice automatically)
     * Enter a name such as "MyRepositories" for the volume
-    * Agree the the repository name `fsharp`
+    * Agree to the repository name `fsharp`
 * Watch the container being built
 * Don't install the extensions recommended by VS Code
-* Wait until the `dotnet test` run (indicated in the status bar) has finished
+* Wait until the `dotnet test` run (indicated in the status bar, running on behalf of the test explorer to find the tests) has finished
 
 ... and you are done.
 
@@ -28,7 +28,7 @@ I have a Windows 11 laptop. VS Code is installed with Ionide and Dev Containers 
 
 Press `Ctrl Shift B` and choose `Build (Debug)` to build the `FSharp.Compiler.Service` solution.
 
->This, btw is important: make sure the Ionide solution explorer shows this solution (and not FSharp.sln, which is only meant for use with `build.sh`); also never use `build.sh`.
+>This, btw is important: make sure the Ionide solution explorer shows the above solution (and not FSharp.sln, which is only meant for use with `build.sh`); also never use `build.sh`.
 
 Select a test in the Ionide test explorer and run it.
 
@@ -70,8 +70,12 @@ Add the following task to `.vscode/tasks.json`:
 
  Run the task. Note the process id.
 
- Make sure that in the Debug window, the launch configuration "Attach to a .net process" is selected (You have to do that only once).
+ Make sure that in the Debug window, the launch configuration "Attach to a .net process" is selected (You have to do this only once).
 
  Add breakpoints as necessary. Press F5. After the attach-breakpoint is reached, press F5 again. Wait until your own breakpoint is hit.
 
  Have fun finding your way through the compiler code.
+
+ ## Feedback
+
+ PLEASE send feedback (via issues or on FSF Slack) if you find mistakes or missing items.
