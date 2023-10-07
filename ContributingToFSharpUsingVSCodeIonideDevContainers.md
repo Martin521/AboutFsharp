@@ -2,9 +2,9 @@
 
 The FSharp repository has great support for VS Code with Ionide and Dev Containers. It still took me a while though, as a newcomer, to understand how it fits all together and to get my infrastructure up and running. 
 
-One reason was that, currently, `fsharp/DEVGUIDE.md` is not really up to date and can be misleading. My main advice in our context: when using Dev Containers, forget about `build.sh`.
+One reason was that, currently, `fsharp/DEVGUIDE.md` is not really up to date and can be misleading. My main hint in our context: when using Dev Containers, forget about `build.sh`.
 
-So this is a summary that may help others in the future.
+So this is a brief summary of the setup that may help others in the future.
 
 *Note: I am writing this on October 7, 2023 and most of it will probably soon be outdated.*
 
