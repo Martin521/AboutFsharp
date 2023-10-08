@@ -39,7 +39,7 @@ I have a Windows 11 laptop. VS Code is installed with Ionide and Dev Containers 
 
 * Select a test in the Ionide test explorer and run it.
 
-* Debugging tests out of the test explorer, unfortunately, currently does not work. I will file an issue for Ionide. However, below is a work-around.
+* Debugging tests out of the test explorer, unfortunately, currently does not work. (I have filed an [issue](https://github.com/ionide/ionide-vscode-fsharp/issues/1946)). See below for a work-around.
 
 * Make a code fix and check it in.
 
