@@ -25,7 +25,7 @@ I have a Windows 11 laptop. VS Code is installed with Ionide and Dev Containers 
 * Run (i.e. Ctrl Shift P) `Dev Containers: Clone Repository in Named Container volume ...`
     * Enter the location of the fork that you just created (it will be offered as first choice automatically)
     * Enter a name such as "MyRepositories" for the volume
-    * Confirm to the repository name `fsharp`
+    * Confirm the repository name `fsharp`
 * Watch the container being built
 * ***Don't*** install the extensions recommended by VS Code (they are outdated, everything works out of the box now)
 * Wait until the `dotnet test` run (indicated in the status bar, running on behalf of the test explorer to find the tests) has finished
