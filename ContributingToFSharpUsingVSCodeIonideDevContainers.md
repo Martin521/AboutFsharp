@@ -2,19 +2,19 @@
 
 The FSharp repository has great support for VS Code with Ionide and Dev Containers. It still took me a while though, as a newcomer, to understand how it fits all together and to get my infrastructure up and running. 
 
-One reason was that, currently, `fsharp/DEVGUIDE.md` is not really up to date and can be misleading. My main hint in our context: when using Dev Containers, forget about `build.sh`.
+One reason was that, currently, `fsharp/DEVGUIDE.md` is not really up to date and can be misleading. My main hint in this context: when using Dev Containers, forget about `build.sh`.
 
 So this is a brief summary of the setup that may help others in the future.
 
 *Note: I am writing this on October 7, 2023 and most of it will probably soon be outdated.*
 
-*Another note, written a few hours later: the amazing F# team (lead) has already integrated my fixes [here](https://github.com/dotnet/fsharp/pull/16089) and [here](https://github.com/dotnet/fsharp/pull/16090), so I have to re-write some paragraphs.*
+*Another note, a few hours later: the amazing F# team (lead) has already integrated my fixes [here](https://github.com/dotnet/fsharp/pull/16089) and [here](https://github.com/dotnet/fsharp/pull/16090), so I have to re-write some paragraphs.*
 
 ## About the Dev Containers extension of VS Code
 
 This extension does amazing magic. It reads the devcontainer configuration from the remote repository, creates the container, installs all the prerequisites needed for the specific repository, sets up a remote VS Code server in the container, installs the necessary extensions there, sets up a gpg agent that supports code signing in the container with your keys, and a lot more.
 
-## Local setup
+## Host setup
 
 I have a Windows 11 laptop. VS Code is installed with Ionide and Dev Containers extensions. And Docker Desktop.
 
@@ -24,11 +24,12 @@ I have a Windows 11 laptop. VS Code is installed with Ionide and Dev Containers 
 * Open VS Code
 * Run (i.e. Ctrl Shift P) `Dev Containers: Clone Repository in Named Container volume ...`
     * Enter the location of the fork that you just created (it will be offered as first choice automatically)
+    * Select the `main` branch
     * Enter a name such as "MyRepositories" for the volume
     * Confirm the repository name `fsharp`
 * Watch the container being built
 * ***Don't*** install the extensions recommended by VS Code (they are outdated, everything works out of the box now)
-* Wait until the `msbuild` run (indicated in the status bar, running on behalf of the test explorer to find the tests) has finished
+* Wait for the initial build and the test discovery of the test explorer to finish. (The latter is still ongoing if you see `Running MSBuild 'Build' target` in the notification area).
 
 ... and you are done.
 
