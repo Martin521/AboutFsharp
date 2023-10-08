@@ -83,6 +83,12 @@ Add the following task to `.vscode/tasks.json`:
 
  Have fun finding your way through the compiler code.
 
+ ## Problems?
+
+ You have messed stuff up? Something does not work anymore and you can't find the reason?
+
+ Just delete the containers and volumes in Docker Desktop and start all over. It just takes a few minutes.
+ 
  ## Feedback
 
  PLEASE send feedback (via issues or on FSF Slack) if you find mistakes or missing items, or have other remarks, or questions.
