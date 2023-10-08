@@ -28,7 +28,7 @@ I have a Windows 11 laptop. VS Code is installed with Ionide and Dev Containers 
     * Confirm the repository name `fsharp`
 * Watch the container being built
 * ***Don't*** install the extensions recommended by VS Code (they are outdated, everything works out of the box now)
-* Wait until the `dotnet test` run (indicated in the status bar, running on behalf of the test explorer to find the tests) has finished
+* Wait until the `msbuild` run (indicated in the status bar, running on behalf of the test explorer to find the tests) has finished
 
 ... and you are done.
 
@@ -39,7 +39,7 @@ I have a Windows 11 laptop. VS Code is installed with Ionide and Dev Containers 
 
 * Select a test in the Ionide test explorer and run it.
 
-* Debugging tests out of the test explorer, unfortunately, currently does not work. (I guess this has to do in some way with BUILDING_USING_DOTNET, but I still have to find out what needs to be changed (in Ionide probably)). However, below is a work-around.
+* Debugging tests out of the test explorer, unfortunately, currently does not work. I will file an issue for Ionide. However, below is a work-around.
 
 * Make a code fix and check it in.
 
