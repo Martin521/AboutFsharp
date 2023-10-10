@@ -92,4 +92,4 @@ Add the following task to `.vscode/tasks.json`:
  
  ## Feedback
 
- PLEASE send feedback (via issues or on FSF Slack) if you find mistakes or missing items, or have other remarks, or questions.
+ PLEASE send feedback (via issues or on FSF Slack) if you find mistakes or missing items in this document, or have other remarks, or questions.
