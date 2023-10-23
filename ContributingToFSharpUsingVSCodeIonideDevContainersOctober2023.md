@@ -56,4 +56,4 @@ BTW I reopen the repository through the Windows task bar context menu for VS Cod
  
  ## Feedback
 
- Please send feedback on this document (via issues or on FSF Slack) if you find mistakes or missing items or have other remarks or questions.
+ Please send feedback on this document (via [issues](https://github.com/Martin521/AboutFsharp/issues) or on FSF Slack) if you find mistakes or missing items or have other remarks or questions.
