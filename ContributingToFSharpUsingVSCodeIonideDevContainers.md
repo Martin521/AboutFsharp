@@ -1,3 +1,5 @@
+This is an outdated version. Find a newer one [here](./ContributingToFSharpUsingVSCodeIonideDevContainersOctober2023.md)
+
 # Contributing to the F# compiler using VS Code, Ionide and Dev Containers
 
 The FSharp repository has great support for VS Code with Ionide and Dev Containers. It still took me a while though, as a newcomer, to understand how it fits all together and to get my infrastructure up and running. 
@@ -20,6 +22,7 @@ I have a Windows 11 laptop. VS Code is installed with Ionide and Dev Containers 
 
 ## Setting up the Dev Container
 
+* Make sure Docker is running
 * Fork the dotnet/fsharp repository
 * Open VS Code
 * Run (i.e. Ctrl Shift P) `Dev Containers: Clone Repository in Named Container volume ...`
